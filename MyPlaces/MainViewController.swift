@@ -10,10 +10,7 @@ import UIKit
 
 class MainViewController: UITableViewController {
     
-    let places = [
-        Place(name: "Burger Heroes", location: "Тернопіль", type: "Ресторан", image: "Burger Heroes" )
-
-    ]
+    let places = Place.getPlaces()
     
     override func viewDidLoad() {
         super.viewDidLoad()
